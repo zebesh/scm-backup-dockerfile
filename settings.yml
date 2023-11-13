@@ -1,0 +1,9 @@
+localFolder: 'backup'
+
+sources:
+  - title: bitbucket_backup
+    hoster: bitbucket
+    type: org
+    name: team
+    authName: username
+    password: app_password
