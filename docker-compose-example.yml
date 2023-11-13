@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  scm-backup:
+    image: zebesh/scm-backup:v1.7.1
+    platform: linux/amd64
+    volumes:
+      - "./backup:/opt/scm-backup/backupl"
+    environment:
+      BITBUCKET_TEAM: "team"
+      BITBUCKET_USER: "user"
+      BITBUCKET_PASS: "pass"
+    container_name: scm-backup
+
